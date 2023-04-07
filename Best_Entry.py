@@ -87,7 +87,7 @@ y_pred_test = Modelling.predict(Testing_data_lda)
 result_df = pan.DataFrame({'ID': range(len(y_pred_test)), 'category': label.inverse_transform(y_pred_test)})
 
 # Save dataframe to csv
-result_df.to_csv('/Users/varul18/Desktop/SML-Project/new_predictions.csv', index=False)
+result_df.to_csv('/Users/varul18/Desktop/SML-Project/predictions.csv', index=False)
 
 print("\nPredicted Data Values of 'y' for testing data\n")
 print(y_pred_test)
