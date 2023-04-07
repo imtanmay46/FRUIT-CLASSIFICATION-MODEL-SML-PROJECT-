@@ -58,7 +58,7 @@ y_coordinate = y_coordinate[outliers != -1]
 X_train, X_val, y_train, y_val = train_test_split(X_LDA, y_coordinate, test_size=0.2, random_state=42)
 
 base_estimator = DecisionTreeClassifier(max_depth=10)
-Modelling = AdaBoostClassifier(base_estimator=base_estimator, n_estimators=1800, learning_rate=1.5, random_state=True)
+Modelling = AdaBoostClassifier(base_estimator=base_estimator, n_estimators=1850, learning_rate=1.5, random_state=True)
 Modelling.fit(X_train, y_train)
 
 # Predict on validation set
@@ -87,7 +87,7 @@ y_pred_test = Modelling.predict(Testing_data_lda)
 result_df = pan.DataFrame({'ID': range(len(y_pred_test)), 'category': label.inverse_transform(y_pred_test)})
 
 # Save dataframe to csv
-result_df.to_csv('/Users/varul18/Desktop/SML-Project/predictions.csv', index=False)
+result_df.to_csv('/Users/varul18/Desktop/SML-Project/new_predictions.csv', index=False)
 
 print("\nPredicted Data Values of 'y' for testing data\n")
 print(y_pred_test)
