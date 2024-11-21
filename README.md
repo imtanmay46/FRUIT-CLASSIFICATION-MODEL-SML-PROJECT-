@@ -20,6 +20,6 @@ Several well-known scholars have explored the use of machine learning techniques
 For example, in a study by Li et al., a deep learning model was used to classify fruits based on images, achieving an accuracy of over 95 percent on a dataset of five fruit types.
 
 In this project, various machine learning models were applied to a ”Fruit Classification” dataset with 4096 features. 
-Prior to model training, preprocessing techniques were em- ployed, including dimensionality reduction using PCA and LDA, and outlier detection using LOF (Local Outlier Factor) scores. 
+Prior to model training, preprocessing techniques were employed, including dimensionality reduction using PCA and LDA, and outlier detection using LOF (Local Outlier Factor) scores. 
 The aim of the project was to identify patterns in the data and predict labels for a test dataset, which could have implications for applications in the agriculture and food industries. 
 Our study contributes to the existing literature by evaluating the performance of different machine learning models on a large and complex fruit classification dataset and comparing the results with those of previous studies conducted by well-known scholars in the field.
